@@ -17,6 +17,7 @@
   --clr-primaryLight: #beedac;
   --clr-grey-1: #102a42;
   --clr-grey-5: #617d98;
+  --clr-grey-7: #c3ced7;
   --clr-grey-10: #f1f5f8;
   --clr-white: #fff;
   --ff-primary: "Catamaran", sans-serif;
@@ -147,6 +148,7 @@ p {
     padding: 4rem 1rem;
   }
 }
+
 /* 
 ================================================================
                           Animation
@@ -301,12 +303,12 @@ p {
   font-family: var(--ff-secondary);
   color: var(--clr-primary);
   animation: slideFromRight 3s ease-in-out 1;
+  margin-bottom: 2rem;
 }
 .banner h1 {
   font-family: var(--ff-primary);
   color: var(--clr-white);
   margin-top: 1.25rem;
-  margin-top: 2rem;
   text-transform: uppercase;
   animation: slideFromLeft 3s ease-in-out 1;
 }
@@ -315,6 +317,7 @@ p {
   outline-offset: 0.35rem;
   font-size: 1.25rem;
   padding: 1rem 1.75rem;
+  margin-top: 2rem;
   animation: show-btn 1s ease-in-out 1;
 }
 /* 
@@ -646,4 +649,54 @@ p {
 }
 .footer-company {
   color: var(--clr-primary);
+}
+/* 
+================================================================
+                      About Us page
+================================================================
+*/
+.bg-grey {
+  background: var(--clr-grey-10);
+}
+.contact .section-title {
+  text-align: center;
+  position: relative;
+  padding: 5rem 0;
+  background: url(../images/product-1.jpeg) center/cover no-repeat;
+  color: var(--clr-white);
+  z-index: 0;
+}
+.contact .section-title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #333;
+  opacity: 0.6;
+  z-index: -1;
+}
+.header-title {
+  margin: auto 0;
+  background-color: red;
+  color: var(--clr-white);
+  padding-bottom: 4rem;
+  z-index: 1;
+}
+
+.about-center .contact-info {
+  padding-right: 2rem;
+}
+.about-center .contact-title {
+  font-size: 1.2rem;
+}
+.about-center .contact-icon {
+  font-size: 1.5rem;
+}
+.about-center .contact-text {
+  font-size: 1rem;
+  padding-left: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
 }
